@@ -6,5 +6,12 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: vue-ussd-decoder
+    restart: unless-stopped
+    networks:
+      - local
     ports:
       - "5173:5173"
+
+networks:
+  local:
+    external: true
