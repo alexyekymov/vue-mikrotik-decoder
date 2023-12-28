@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  vue_ussd_decoder:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: vue-ussd-decoder
+    ports:
+      - "5173:5173"
