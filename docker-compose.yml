@@ -2,10 +2,10 @@ version: '3'
 
 services:
   vue_ussd_decoder:
+    container_name: vue-ussd-decoder
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: vue-ussd-decoder
     restart: unless-stopped
     networks:
       - local
