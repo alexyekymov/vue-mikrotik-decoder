@@ -2,7 +2,7 @@ version: '3'
 
 services:
   vue_ussd_decoder:
-    container_name: vue-ussd-decoder
+    container_name: vue-decoder
     build:
       context: .
       dockerfile: Dockerfile

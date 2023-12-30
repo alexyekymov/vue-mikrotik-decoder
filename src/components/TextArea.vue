@@ -33,7 +33,7 @@ const decodedMessage = ref("")
 
 const sendMessageToDecode = () => {
   const dataMessage = new Message(message.value)
-  fetch("http://ussd-decoder/decoder/api/v1/decode", {
+  fetch("https://overlax.pp.ua/decoder/api/v1/decode", {
     headers: {
       'Content-Type': 'application/json',
     },
